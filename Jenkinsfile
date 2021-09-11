@@ -11,5 +11,11 @@ pipeline {
                 '''
             }
         }
+		
+		stage('BuildMore') {
+            steps {
+                sh 'echo "More one step"'
+            }
+        }
     }
 }
