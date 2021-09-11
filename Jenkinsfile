@@ -10,11 +10,15 @@ pipeline {
                     ls -lah
                 '''
             }
-        }
-		
+        }		
 		stage('BuildMore') {
             steps {
                 sh 'echo "More one step"'
+            }
+        }
+		stage('Test') {
+            steps {
+                sh 'echo "Test step"'
             }
         }
     }
